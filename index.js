@@ -16,6 +16,7 @@ function currentLine(katzDeliLine) {
       let lineMessage = 'The line is currently:';
       let number = customer + 1 + '.';
       lineMessage += `number katzDeliLine[customer],`
+      console.log(lineMessage);
       return lineMessage;
     }
   } else {
