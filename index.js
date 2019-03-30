@@ -20,7 +20,7 @@ function currentLine(katzDeliLine) {
       let number = i + 1;
       lineMessage += ` ${number}. ${customer},`
     }
-      
+      lineMessage = lineMessage.slice(0, lineMessage.length-1)
       return lineMessage;
   } else {
     return 'The line is currently empty.'
