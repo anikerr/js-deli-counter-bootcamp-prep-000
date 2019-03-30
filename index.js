@@ -19,8 +19,9 @@ function currentLine(katzDeliLine) {
       let customer = katzDeliLine[i];
       let number = i + 1;
       lineMessage += ` ${number}. ${customer},`
-      return lineMessage;
     }
+      
+      return lineMessage;
   } else {
     return 'The line is currently empty.'
   }
