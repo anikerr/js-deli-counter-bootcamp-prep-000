@@ -4,7 +4,7 @@ function takeANumber(katzDeliLine, newName) {
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length >= 1) {
-    return `Currently serving ${katzDeliLine.shift()}`;
+    return `Currently serving ${katzDeliLine.shift()}.`;
   } else {
     return 'There is nobody waiting to be served!';
   }
@@ -17,7 +17,6 @@ function currentLine(katzDeliLine) {
       let customer = katzDeliLine[i];
       let number = i + 1;
       lineMessage += `${number}. ${customer},`
-      console.log(lineMessage);
       return lineMessage;
     }
   } else {
