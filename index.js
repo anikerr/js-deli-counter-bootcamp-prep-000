@@ -1,5 +1,5 @@
 function takeANumber(katzDeliLine, newName) {
-  let currentNumber = katzDeliLine.indexOf(newName) + 1;
+  let currentNumber = 1 + katzDeliLine.indexOf(newName);
   return `Welcome, ${newName}. You are number ${currentNumber} in line.`;
 }
 
