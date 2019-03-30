@@ -15,7 +15,7 @@ function currentLine(katzDeliLine) {
     for (let i = 0; i < katzDeliLine.length; i++) {
       let lineMessage = 'The line is currently:';
       let customer = katzDeliLine[i];
-      let number = customer + 1;
+      let number = i + 1;
       lineMessage += `${number}. ${customer},`
       console.log(lineMessage);
       return lineMessage;
